@@ -3,6 +3,7 @@
 ### Installation
 
 Install the dependencies.
+Make sure you have Python and RabbitMQ on you local machine.
 
 ```sh
 $ pip3 install -r setup.txt
@@ -19,11 +20,11 @@ $ python tests.py
 Windows cmd
 
 ```sh
-$ run
+$ run.bat
 ```
 
 Linux/Mac Terminal
 
 ```sh
-$ ./run
+$ ./run.sh
 ```
