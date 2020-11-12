@@ -76,7 +76,7 @@ def insertToDb(df,year, tablename):
         tablename: the tabke name we want to insert the data into
     """
     conn = sqlite.connect()
-    deleteYearFromDB(year) #Ensure there are no duplicates in the table when we run the script multiple times
+    deleteYearFromDB(year) #Ensure there are no duplicates in the table when we run the script multiple times (for easy testing)
     df.to_sql(tablename, con=conn, if_exists='append', index=False)
     sqlite.disconnect()
 

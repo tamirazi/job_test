@@ -16,7 +16,11 @@ def main():
 def onMsgRecived(ch, method, properties, body):
     global displayChart
 
-    if not displayChart:
+    if not displayChart: 
+        '''
+        Plot only one chart (onMsgRecived recived multiple messages)
+        The subprocess will sample the db each second
+        '''
         displayChart = True
         subprocess.run("python chart.py", shell=True, check=True)
 

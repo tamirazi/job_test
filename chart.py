@@ -1,5 +1,4 @@
 import random
-from itertools import count
 import pandas as pd
 import datetime
 import os
@@ -67,4 +66,4 @@ fig, ax = initChart()
 ani = FuncAnimation(plt.gcf(), animate, interval=1000)
 
 plt.show()
-os.remove(DB)
+os.remove(DB) #Make the animation start from the start next run.
